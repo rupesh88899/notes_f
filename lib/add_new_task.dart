@@ -116,7 +116,7 @@ class _AddNewTaskState extends State<AddNewTask> {
               TextFormField(
                 controller: descriptionController,
                 decoration: const InputDecoration(
-                  hintText: "Title",
+                  hintText: "Description",
                 ),
                 maxLines: 5,
               ),
@@ -124,7 +124,7 @@ class _AddNewTaskState extends State<AddNewTask> {
 
               //color picker
               ColorPicker(
-                color: Colors.blue,
+                color: _selectedColor,
                 onColorChanged: (Color color) {
                   setState(() {
                     _selectedColor = color;
